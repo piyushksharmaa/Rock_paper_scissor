@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  background-color: rgb(93, 93, 107);
+  font-family: sans-serif;
+}
+.score {
+  color: rgb(226, 230, 234);
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score h2 {
+  font-size: 25px;
+}
+.score p {
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+}
+.intro {
+  color: rgb(226, 230, 234);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+}
+.intro h1 {
+  font-size: 60px;
+}
+.intro button,
+.match button {
+  width: 175px;
+  height: 65px;
+  background: none;
+  border: none;
+  color: rgb(226, 230, 234);
+  font-size: 20px;
+  background-color: rgb(87, 175, 146);
+  border-radius: 15px;
+}
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.winner {
+  color: rgb(222, 221, 221);
+  text-align: center;
+  font-size: 60px;
+}
+
+.hands,
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.player-hand {
+  transform: rotateY(180deg);
+}
